@@ -27,17 +27,24 @@ A powerful research assistant that leverages LLM (Groq's LLaMA3), LangChain, and
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/your-username/LLM-News-Research-Tool.git
+git clone https://github.com/my-username/LLM-News-Research-Tool.git
 cd LLM-News-Research-Tool
 python -m venv venv
 source venv/bin/activate  # or .\venv\Scripts\activate on Windows
 pip install -r requirements.txt
+
+# **🔐 Setup Environment Variables**
+       Create a .env file in the root folder:
+
+NEWS_API_KEY=your_newsapi_key
+GROQ_API_KEY=your_groq_api_key
 
 ### **🚦Run the App**
        streamlit run app.py
 
 ###  **📁 Project Structure**
        LLM-News-Research-Tool/
+
 │
 ├── app.py
 ├── langchain_config.py
@@ -45,4 +52,3 @@ pip install -r requirements.txt
 ├── .gitignore
 ├── README.md
 └── requirements.txt
-
